@@ -1,0 +1,118 @@
+/* Teljes oldal stílus – háttérkép és alapszínek */
+body {
+  background: url("../img/hatter.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Átlátszó navigáció */
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  transition: background-color 0.3s ease;
+}
+
+/* Menü animáció */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hero szekció háttér áttetszőséggel */
+.hero {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  padding: 3rem 1rem;
+  margin-top: 80px;
+}
+
+/* Képek stílusa */
+.img-fluid {
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Szöveg stílus */
+main p {
+  color: #ffffff;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+/* Árnyék kizárólag a főoldali képek alatti szövegekhez */
+.text-shadow {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Reszponzív mobilra */
+@media (max-width: 768px) {
+  h1.display-4 {
+    font-size: 2rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .col-md-4,
+  .col-md-8 {
+    width: 100%;
+  }
+}
+
+.dark-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.text-success {
+  color: #28c76f !important;
+}
+
+.typewriter {
+  border-right: 2px solid #28c76f;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #28c76f; }
+}
+
+.shadow-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
