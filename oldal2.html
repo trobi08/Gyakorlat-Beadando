@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gépállomány – Szecskázó Kft.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    .card-img-top {
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.05);
+    }
+
+    .card-text {
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigációs menü -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🌾 Szecskázó Kft.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+          <li class="nav-item"><a class="nav-link active" href="oldal2.html">Gépállomány</a></li>
+          <li class="nav-item"><a class="nav-link" href="oldal3.html">Silózási táblázat</a></li>
+          <li class="nav-item"><a class="nav-link" href="oldal4.html">Megrendelés</a></li>
+          <li class="nav-item"><a class="nav-link" href="oldal5.html">Kapcsolat</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fejléc logóval -->
+  <header class="hero text-center d-flex align-items-center justify-content-center">
+    <div class="container py-5">
+      <div class="d-flex align-items-center justify-content-center flex-wrap gap-3">
+        <div>
+          <h1 class="display-5 fw-bold text-success">Gépállomány</h1>
+          <p class="lead text-success mb-0">Megbízható, modern gépek a gyors és precíz mezőgazdasági munkához.</p>
+        </div>
+        <img src="img/kislogo.png" alt="Szecskázó logó" style="max-width: 280px; height: auto; margin-left: auto;" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Gépek listája -->
+  <main class="container my-5">
+    <div class="row">
+
+      <!-- Kombájn -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="img/Claas Lexion 770.png" class="card-img-top" alt="Kombájn">
+          <div class="card-body">
+            <h5 class="card-title">Claas Lexion 770 kombájn</h5>
+            <p class="card-text">
+              Nagy teljesítményű betakarítógép gabona, kukorica és napraforgó aratásához.
+              Precíz vágás, hatékony szemleválasztás, kiváló tömörítés. Napi 10+ hektár teljesítményre képes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Szecskázó -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="img/John-Deere-8600i.jpg" class="card-img-top" alt="Szecskázó gép">
+          <div class="card-body">
+            <h5 class="card-title">John Deere 8600i szecskázó</h5>
+            <p class="card-text">
+              Professzionális takarmánynövény feldolgozó gép. Állítható vágáshossz, rendkívül jó tömörítési képesség.
+              Szarvasmarha- és sertéstelepek részére kiváló minőségű siló előállítására alkalmas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aprítógép -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="img/GreenMech  EC16-23MT35.png" class="card-img-top" alt="Aprítógép">
+          <div class="card-body">
+            <h5 class="card-title">GreenMech EC16 aprítógép</h5>
+            <p class="card-text">
+              Gallyak, ágak és zöldhulladék gyors és biztonságos helyszíni aprítása. A keletkezett mulcs alkalmas komposztálásra és talajtakarásra.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bobcat markoló -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="img/BobcatE35.jpeg" class="card-img-top" alt="Kis markoló">
+          <div class="card-body">
+            <h5 class="card-title">Bobcat E35 kompakt markoló</h5>
+            <p class="card-text">
+              Gumitalpas, kompakt gép szűk helyekre. Ideális árkok ásásához, vízelvezetéshez és udvari tereprendezéshez.
+              Két darab áll rendelkezésre, így párhuzamos munkavégzés is megvalósítható nagyobb projekteknél.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ÚJ: Kubota markoló -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="img/Kubota KX030.png" class="card-img-top" alt="Kubota markoló">
+          <div class="card-body">
+            <h5 class="card-title">Kubota KX030-4 mini markoló</h5>
+            <p class="card-text">
+              Modern, városi környezetben is jól használható kompakt markológép. Kifejezetten udvarok, szűk terek,
+              járdák és kis telephelyek földmunkáihoz lett kialakítva. Gumitalp, dönthető gém és precíz vezérlés jellemzi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ÚJ: Autómentő tréler -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="img/Brian James C2.jpg" class="card-img-top" alt="Autómentő tréler">
+          <div class="card-body">
+            <h5 class="card-title">Brian James C2 kis autómentő tréler</h5>
+            <p class="card-text">
+              Két tengelyes, hosszú platós, csörlővel felszerelt tréler. Elsősorban gépszállításhoz, de kiválóan alkalmas személyautók,
+              kisteherautók mentésére is. Rámpás kivitel, alacsony felhajtási szög, biztonságos rögzítési pontokkal.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- AOS scriptek -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-out',
+      once: true
+    });
+  </script>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
